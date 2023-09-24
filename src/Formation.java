@@ -12,7 +12,7 @@ public class Formation {
         matieres.remove(matiere);
     }
 
-    public Integer recup(String matiere) {
+    public int recup(String matiere) {
         return matieres.get(matiere);
     }
 }
