@@ -14,12 +14,6 @@ public class Etudiant {
         }
     }
 
-    public void addNote(String matiere, int note) {
-        if (note >= 0 && note <= 20){
-            Integer i=note;
-            this.resultats.put(matiere,i);
-        }
-    }
     public float moyenne(String matiere) {
         int moy = 0;
         int i = 0;
