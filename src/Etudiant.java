@@ -13,6 +13,7 @@ public class Etudiant {
             System.out.println("Impossible d'ajouter une note");
         }
     }
+
     public float moyenne(String matiere) {
         int moy = 0;
         int i = 0;
