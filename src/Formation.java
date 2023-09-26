@@ -4,6 +4,11 @@ public class Formation {
     private String identifiant;
     private Map<String, Integer> matieres;
 
+    public Formation(String identifiant, Map<String, Integer> matieres) {
+        this.identifiant = identifiant;
+        this.matieres = matieres;
+    }
+
     public void ajout(String matiere, int coef) {
         matieres.put(matiere, coef);
     }
