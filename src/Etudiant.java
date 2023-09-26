@@ -8,16 +8,9 @@ public class Etudiant {
 
     public void addNote(String matiere, double note) {
         if (note >= 0 && note <= 20 && this.resultats.containsKey(matiere)) {
-            this.resultats.get(matiere).add(0, note);
+            this.resultats.get(matiere).add(note);
         } else {
             System.out.println("Impossible d'ajouter une note");
-        }
-    }
-
-    public void addNote(String matiere, int note) {
-        if (note >= 0 && note <= 20){
-            Integer i=note;
-            this.resultats.put(matiere,i);
         }
     }
     public float moyenne(String matiere) {
@@ -45,7 +38,6 @@ public class Etudiant {
         }
         return moyGenerale/i;
     }
-    public Formation getFormation(){
-        return this.formation;
+    public Formation getFormation(){return this.formation;
     }
 }
