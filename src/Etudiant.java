@@ -7,11 +7,17 @@ public class Etudiant {
     HashMap<String, List<Double>> resultats;
 
     public void addNote(String matiere, double note) {
-        if (note >= 0 && note <= 20 && this.resultats.containsKey(matiere)){
+        if (note >= 0 && note <= 20 && this.resultats.containsKey(matiere)) {
             this.resultats.get(matiere).add(0, note);
-        }
-        else{
+        } else {
             System.out.println("Impossible d'ajouter une note");
+        }
+    }
+
+    public void addNote(String matiere, int note) {
+        if (note >= 0 && note <= 20){
+            Integer i=note;
+            this.resultats.put(matiere,i);
         }
     }
     public float moyenne(String matiere) {
@@ -27,7 +33,7 @@ public class Etudiant {
     public double moyenneGenerale () {
         double moyGenerale = 0;
         int i = 0;
-        for (int matiere : this.resultats.keySet()) {
+        for (String matiere : this.resultats.keySet()) {
             double moy = 0;
             int j = 0;
             for (double note : this.resultats.get(matiere)) {
@@ -38,5 +44,10 @@ public class Etudiant {
             i++;
         }
         return moyGenerale/i;
+    }
+
+    
+    public Formation getFormation(){
+        return this.formation;
     }
 }

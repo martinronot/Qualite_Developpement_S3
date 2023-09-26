@@ -1,8 +1,8 @@
 import java.util.Map;
 
 public class Formation {
-    public String identifiant;
-    public Map<String, Integer> matieres;
+    private String identifiant;
+    private Map<String, Integer> matieres;
 
     public void ajout(String matiere, int coef) {
         matieres.put(matiere, coef);
