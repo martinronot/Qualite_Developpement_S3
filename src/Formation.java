@@ -15,4 +15,12 @@ public class Formation {
     public int recup(String matiere) {
         return matieres.get(matiere);
     }
+
+    public String getIdentifiant() {
+        return identifiant;
+    }
+
+    public Map<String, Integer> getMatieres() {
+        return matieres;
+    }
 }

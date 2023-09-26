@@ -40,7 +40,7 @@ public class Etudiant {
                 moy += note;
                 j++;
             }
-            moyGenerale += moy * this.formation.matieres.get(matiere);
+            moyGenerale += moy * this.formation.getMatieres().get(matiere);
             i++;
         }
         return moyGenerale/i;
