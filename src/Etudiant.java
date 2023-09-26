@@ -45,8 +45,6 @@ public class Etudiant {
         }
         return moyGenerale/i;
     }
-
-    
     public Formation getFormation(){
         return this.formation;
     }
