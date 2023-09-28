@@ -1,12 +1,11 @@
 import java.util.Map;
 
 public class Formation {
-    private String identifiant;
-    private Map<String, Integer> matieres;
+    protected String identifiant;
+    protected Map<String, Integer> matieres;
 
-    public Formation(String identifiant, Map<String, Integer> matieres) {
+    public Formation(String identifiant) {
         this.identifiant = identifiant;
-        this.matieres = matieres;
     }
 
     public void ajout(String matiere, int coef) {
